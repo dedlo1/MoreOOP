@@ -3,7 +3,7 @@ import java.util.Random;
 public abstract class Noble extends Character {
 
     public Noble(int min, int max) {
-        super(new Random().nextInt(min, max), new Random().nextInt(min, max));
+        super(min + new Random().nextInt(max - min), min + new Random().nextInt(max - min));
     }
 
     @Override
